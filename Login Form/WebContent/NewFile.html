@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+</head>
+<body>
+	<h1>Form</h1>
+	<h2>Compila il seguente form costituito da 3 parti:</h2>
+	<ol>
+		<li>Dati personali</li>
+		<li>Indirizzo di consegna</li>
+		<li>Dati della carta di credito</li>
+	</ol>
+	
+	<form method="POST" action="REcho">
+		<fieldset> <legend> Dati personali</legend>
+			<label>Nome (o ragione sociale):</label> <input type="text" name="nome" placeholder="Marco" maxlength="20">
+			<br>
+			<label>Cognome: </label> <input type="text" name="cognome" placeholder="Rossi" maxlength="20">
+			<br>
+			<label>Sesso: </label> <br>
+			<input type="radio" name="sesso" value="Uomo">Uomo<br>
+			<input type="radio" name="sesso" value="Donna">Donna<br>
+			<input type="radio" name="sesso" value="Altro">Altro<br>
+			<label>Cf/Piva: </label> <input type="text" name="cf" placeholder="MRCRSS" maxlength="16">
+			<br>
+			<label>Email: </label> <input type="email" name="email" placeholder="mariorossi@gmail.it">
+			<br>
+			<label>Password: </label> <input type="password" name="password">
+		</fieldset>
+		
+		<fieldset> <legend>Indirizzo di consegna</legend>
+			<label>Indirizzo: </label> <input type="text" name="indirizzo" placeholder="via roma 43">
+			<br>
+			<label>CAP: </label> <input type="number" name="cap" placeholder="84016">
+			<br>
+			<label>Città: </label> <input type="text" name="citta" placeholder="Pagani">
+			<br>
+			<label>Provincia: </label> <input type="text" name="provincia" placeholder="Salerno">
+			<br> 
+			<label>Eventuali istruzioni di consegna: </label> <br>
+			<textarea rows="10" cols="40"></textarea>
+		</fieldset>
+	
+		<fieldset> <legend>Carta di credito</legend>
+			<label>Numero di carta: </label> <input type="number" name="numero_carta" placeholder="0000 0000 0000 0000">
+			<br>
+			<label>Data di scadenza: </label> <input type="date" name="data_scadenza">
+			<br>
+			<label>Codice segreto: </label> <input type="number" name="codice_segreto" placeholder="000">
+		</fieldset>
+		<input type="submit" value="Invia"> &nbsp <input type="reset" value="Ripristina">
+	</form>
+	
+	
+</body>
+</html>
